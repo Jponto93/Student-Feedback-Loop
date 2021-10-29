@@ -33,11 +33,11 @@ TO DO...
         [ ] sends understanding input to reducer 
         [ ] sends user to '/support'
 
-[ ] support component
-    [ ] <h2> How well are you feeling supported? 
-    [ ] num input
-        [ ] Support? // placeholder 
-    [ ] next button 
+[x] support component
+    [x] <h2> How well are you feeling supported? 
+    [x] num input
+        [x] Support? // placeholder 
+    [x] next button 
         [ ] input validation
         [ ] sends support input to reducer 
         [ ] sends user to '/comments' 
