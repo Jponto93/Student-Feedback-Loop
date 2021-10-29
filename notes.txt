@@ -24,11 +24,11 @@ TO DO...
         [ ] sends feeling input to reducer
         [ ] sends user to '/understanding'
 
-[ ] understanding component
-    [ ] <h2> How well are you understanding the content?
-    [ ] num input
-        [ ] Understanding? // placeholder 
-    [ ] next button 
+[x] understanding component
+    [x] <h2> How well are you understanding the content?
+    [x] num input
+        [x] Understanding? // placeholder 
+    [x] next button 
         [ ] input validation
         [ ] sends understanding input to reducer 
         [ ] sends user to '/support'
