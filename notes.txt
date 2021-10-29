@@ -1,0 +1,68 @@
+TO DO...
+
+[ ] Reducers (index.js)
+    [ ] feedback // object template
+        [ ] feeling 
+        [ ] understanding 
+        [ ] support 
+        [ ] comments 
+    [ ] resultsList // arr of objects
+
+[ ]  Routes 
+    [ ] '/' for home (feeling) 
+    [ ] '/understanding
+    [ ] '/support'
+    [ ] '/comments '
+    [ ] '/results'
+
+[ ] feeling component
+    [ ] <h2> How are you feeling today?
+    [ ] num input
+        [ ] feeling? //placeholder
+    [ ] next button 
+        [ ] input validation
+        [ ] sends feeling input to reducer
+        [ ] sends user to '/understanding'
+
+[ ] understanding component
+    [ ] <h2> How well are you understanding the content?
+    [ ] num input
+        [ ] Understanding? // placeholder 
+    [ ] next button 
+        [ ] input validation
+        [ ] sends understanding input to reducer 
+        [ ] sends user to '/support'
+
+[ ] support component
+    [ ] <h2> How well are you feeling supported? 
+    [ ] num input
+        [ ] Support? // placeholder 
+    [ ] next button 
+        [ ] input validation
+        [ ] sends support input to reducer 
+        [ ] sends user to '/comments' 
+
+[ ] comments component
+    [ ] <h2> Any comments you want to leave? 
+    [ ] text input 
+        [ ] Comments // placeholder 
+    [ ] next button 
+        [ ] input validation
+        [ ] sends comments to the reducer 
+        [ ] send complete review to resultsList reducer (for admin)
+        [ ] sends user to '/results' to review
+
+[ ] review component
+    <h2> Review Your Feedback 
+        <p> obj.feeling
+        <p> obj.understanding
+        <p> obj.support
+        <p> obj.comments
+    <button>SUBMIT 
+        [ ] sends complete feedback to server 
+        [ ] saves submission in DB 
+    
+[ ] thank you component
+    [ ] <p> Thank You!
+        [ ] <button> Leave New Feedback </button> 
+            [ ] reset survey from beginning 
