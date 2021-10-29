@@ -42,11 +42,11 @@ TO DO...
         [ ] sends support input to reducer 
         [ ] sends user to '/comments' 
 
-[ ] comments component
-    [ ] <h2> Any comments you want to leave? 
-    [ ] text input 
-        [ ] Comments // placeholder 
-    [ ] next button 
+[x] comments component
+    [x] <h2> Any comments you want to leave? 
+    [x] text input 
+        [x] Comments // placeholder 
+    [x] next button 
         [ ] input validation
         [ ] sends comments to the reducer 
         [ ] send complete review to resultsList reducer (for admin)
