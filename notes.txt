@@ -15,11 +15,11 @@ TO DO...
     [ ] '/comments '
     [ ] '/results'
 
-[ ] feeling component
-    [ ] <h2> How are you feeling today?
-    [ ] num input
-        [ ] feeling? //placeholder
-    [ ] next button 
+[x] feeling component
+    [x] <h2> How are you feeling today?
+    [x] num input
+        [ x] feeling? //placeholder
+    [x] next button 
         [ ] input validation
         [ ] sends feeling input to reducer
         [ ] sends user to '/understanding'
