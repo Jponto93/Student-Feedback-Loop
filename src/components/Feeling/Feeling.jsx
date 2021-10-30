@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
+import { useHistory } from 'react-router';
 
 function Feeling() {
 
     const dispatch = useDispatch();
+    const history = useHistory();
 
     const [feelingFeedback, setFeelingFeedback] = useState({feeling: ''})
 
@@ -15,6 +17,7 @@ function Feeling() {
             type: 'ADD_FEELING',
             payload: feelingFeedback
         })
+        history.push('/understanding')
     }
 
     // console.log(feelingFeedback);

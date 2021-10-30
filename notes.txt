@@ -21,8 +21,8 @@ TO DO...
         [ x] feeling? //placeholder
     [x] next button 
         [ ] input validation
-        [ ] sends feeling input to reducer
-        [ ] sends user to '/understanding'
+        [x] sends feeling input to reducer
+        [x] sends user to '/understanding'
 
 [x] understanding component
     [x] <h2> How well are you understanding the content?
