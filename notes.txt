@@ -1,12 +1,10 @@
 TO DO...
 
-[ ] Reducers (index.js)
+[x] Reducers (index.js)
     [x] feedback // object template
         [x] feeling 
         [x] understanding 
-        [ ] support 
-        [ ] comments 
-    [ ] resultsList // arr of objects
+        [x] support 
 
 [x]  Routes 
     [x] '/' for home (feeling) 
@@ -20,7 +18,7 @@ TO DO...
     [x] num input
         [ x] feeling? //placeholder
     [x] next button 
-        [ ] input validation
+        [x] input validation
         [x] sends feeling input to reducer
         [x] sends user to '/understanding'
 
@@ -29,7 +27,7 @@ TO DO...
     [x] num input
         [x] Understanding? // placeholder 
     [x] next button 
-        [ ] input validation
+        [x] input validation
         [x] sends understanding input to reducer 
         [x] sends user to '/support'
 
@@ -38,7 +36,7 @@ TO DO...
     [x] num input
         [x] Support? // placeholder 
     [x] next button 
-        [ ] input validation
+        [x] input validation
         [x] sends support input to reducer 
         [x] sends user to '/comments' 
 
@@ -47,7 +45,7 @@ TO DO...
     [x] text input 
         [x] Comments // placeholder 
     [x] next button 
-        [ ] input validation
+        [x] input validation
         [x] sends total feedback results to DB using POST
         [x] sends user to '/results' to review
 
