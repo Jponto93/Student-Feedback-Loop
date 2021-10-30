@@ -1,18 +1,18 @@
 TO DO...
 
 [ ] Reducers (index.js)
-    [ ] feedback // object template
-        [ ] feeling 
-        [ ] understanding 
+    [x] feedback // object template
+        [x] feeling 
+        [x] understanding 
         [ ] support 
         [ ] comments 
     [ ] resultsList // arr of objects
 
-[ ]  Routes 
-    [ ] '/' for home (feeling) 
-    [ ] '/understanding
-    [ ] '/support'
-    [ ] '/comments '
+[x]  Routes 
+    [x] '/' for home (feeling) 
+    [x] '/understanding
+    [x] '/support'
+    [x] '/comments '
     [ ] '/results'
 
 [x] feeling component
@@ -30,8 +30,8 @@ TO DO...
         [x] Understanding? // placeholder 
     [x] next button 
         [ ] input validation
-        [ ] sends understanding input to reducer 
-        [ ] sends user to '/support'
+        [x] sends understanding input to reducer 
+        [x] sends user to '/support'
 
 [x] support component
     [x] <h2> How well are you feeling supported? 
