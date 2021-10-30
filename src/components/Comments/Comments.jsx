@@ -10,7 +10,7 @@ function Comments() {
     const feeling = useSelector(store => store.feeling)
     const understanding = useSelector(store => store.understanding)
     const support = useSelector(store => store.support)
-    const [comments, setComments] = useState ('');
+    const [comments, setComments] = useState ('none');
 
 
     
