@@ -52,7 +52,7 @@ const support = (state = template, action) => {
 }
 
 const results = (state = {}, action) => {
-    
+
     switch (action.type) {
         case 'ADD_RESULTS':
             return action.payload
@@ -67,15 +67,12 @@ const storeInstance = createStore(
     combineReducers({
         feeling,
         understanding,
-        support, 
+        support,
         results
     }), applyMiddleware(
         logger
     )
 );
-
-
-
 
 ReactDOM.render(
     <Provider store={storeInstance}>

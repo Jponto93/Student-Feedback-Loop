@@ -6,17 +6,14 @@ function Comments() {
 
     const dispatch = useDispatch();
     const history = useHistory();
-    
+
     const feeling = useSelector(store => store.feeling)
     const understanding = useSelector(store => store.understanding)
     const support = useSelector(store => store.support)
-    const [comments, setComments] = useState ('none');
+    const [comments, setComments] = useState('none');
 
-
-    
-    
     const handleClick = (e) => {
-        
+
         const results = {
             feeling: feeling,
             understanding: understanding,
@@ -35,9 +32,9 @@ function Comments() {
     return (
         <>
             <h2>Any comments you want to leave?</h2>
-            <input 
-            required
-            type="text"
+            <input
+                required
+                type="text"
                 placeholder="Comments"
                 value={comments.comments}
                 onChange={(e) => setComments(e.target.value)} />

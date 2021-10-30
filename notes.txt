@@ -11,7 +11,7 @@ TO DO...
     [x] '/understanding
     [x] '/support'
     [x] '/comments '
-    [ ] '/results'
+    [x] '/results'
 
 [x] feeling component
     [x] <h2> How are you feeling today?

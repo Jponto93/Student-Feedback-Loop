@@ -10,24 +10,24 @@ function Results() {
     const dispatch = useDispatch();
 
     const handleSubmit = () => {
-        
+
         axios({
             method: 'POST',
             url: '/feedback',
             data: results
         })
-        .then((response) => {
-            console.log('POST RESPONSE', response);
-        })
-        .catch((err) => {
-            console.log('Error in POST', err);
-            res.sendStatus(500);
-        })
+            .then((response) => {
+                console.log('POST RESPONSE', response);
+            })
+            .catch((err) => {
+                console.log('Error in POST', err);
+                res.sendStatus(500);
+            })
 
         dispatch({
             type: 'RESET_SURVEY',
         })
-        
+
         history.push('/thankyou')
     }
 

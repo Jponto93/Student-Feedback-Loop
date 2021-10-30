@@ -15,33 +15,25 @@ function App() {
   return (
     <Router>
       <div className='App'>
-
         <Header />
-
         <Route exact path="/">
           <Feeling />
         </Route>
-
         <Route exact path="/understanding">
           <Understanding />
         </Route>
-
         <Route exact path="/support">
           <Support />
         </Route>
-
         <Route exact path="/comments">
           <Comments />
         </Route>
-
         <Route exact path="/review">
           <Results />
         </Route>
-        
         <Route exact path="/thankyou">
           <ThankYou />
         </Route>
-
       </div>
     </Router>
   );

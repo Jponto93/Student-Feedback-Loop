@@ -25,7 +25,7 @@ function Support() {
 
     return (
         <>
-            <h2>How are you feeling today?</h2>
+            <h2>How well are you being supported?</h2>
             <input
                 required
                 type="number"
