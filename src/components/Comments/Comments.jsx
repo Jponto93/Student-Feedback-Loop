@@ -29,6 +29,7 @@ function Comments() {
             type: 'ADD_RESULTS',
             payload: results
         })
+        history.push('/review')
     } // end handleClick
 
     return (

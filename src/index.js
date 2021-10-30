@@ -22,8 +22,10 @@ const feeling = (state = template, action) => {
     switch (action.type) {
         case 'ADD_FEELING':
             return action.payload
+        case 'RESET_SURVEY':
+            return template
         default:
-            return state;
+            return state
     }
 }
 
@@ -31,8 +33,10 @@ const understanding = (state = template, action) => {
     switch (action.type) {
         case 'ADD_UNDERSTANDING':
             return action.payload
+        case 'RESET_SURVEY':
+            return template
         default:
-            return state;
+            return state
     }
 }
 
@@ -40,6 +44,8 @@ const support = (state = template, action) => {
     switch (action.type) {
         case 'ADD_SUPPORT':
             return action.payload
+        case 'RESET_SURVEY':
+            return template
         default:
             return state;
     }
@@ -50,8 +56,10 @@ const results = (state = {}, action) => {
     switch (action.type) {
         case 'ADD_RESULTS':
             return action.payload
+        case 'RESET_SURVEY':
+            return {}
         default:
-            return state;
+            return state
     }
 }
 

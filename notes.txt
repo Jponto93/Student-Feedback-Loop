@@ -48,21 +48,20 @@ TO DO...
         [x] Comments // placeholder 
     [x] next button 
         [ ] input validation
-        [ ] sends comments to the reducer 
-        [ ] send complete review to resultsList reducer (for admin)
-        [ ] sends user to '/results' to review
+        [x] sends total feedback results to DB using POST
+        [x] sends user to '/results' to review
 
-[ ] review component
+[x] review component
     <h2> Review Your Feedback 
         <p> obj.feeling
         <p> obj.understanding
         <p> obj.support
         <p> obj.comments
     <button>SUBMIT 
-        [ ] sends complete feedback to server 
-        [ ] saves submission in DB 
+        [x] sends complete feedback to server 
+        [x] saves submission in DB 
     
-[ ] thank you component
-    [ ] <p> Thank You!
-        [ ] <button> Leave New Feedback </button> 
-            [ ] reset survey from beginning 
+[x] thank you component
+    [x] <p> Thank You!
+        [x] <button> Leave New Feedback </button> 
+            [x] reset survey from beginning 
