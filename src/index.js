@@ -18,17 +18,6 @@ let template = {
     comments: ''
 };
 
-// const feedback = (state = template, action) => {
-//     // switch (action.type) {
-//     //     case 'ADD_FEELING':
-//     //         return action.payload
-//     //     case 'ADD_UNDERSTANDING':
-//     //         return action.payload
-//     //     default:
-//     //         return state
-//     // }
-// }
-
 const feeling = (state = template, action) => {
     switch (action.type) {
         case 'ADD_FEELING':
@@ -56,12 +45,22 @@ const support = (state = template, action) => {
     }
 }
 
+const results = (state = {}, action) => {
+    
+    switch (action.type) {
+        case 'ADD_RESULTS':
+            return action.payload
+        default:
+            return state;
+    }
+}
+
 const storeInstance = createStore(
     combineReducers({
-        // feedback
         feeling,
         understanding,
-        support
+        support, 
+        results
     }), applyMiddleware(
         logger
     )
