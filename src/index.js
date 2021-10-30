@@ -4,18 +4,43 @@ import './index.css';
 import App from './components/App/App';
 import registerServiceWorker from './registerServiceWorker';
 // set up redux
-import {createStore, combineReducers, applyMiddleware} from 'redux';
-import {Provider} from 'react-redux';
+import { createStore, combineReducers, applyMiddleware } from 'redux';
+import { Provider } from 'react-redux';
 import logger from 'redux-logger';
 
 // REDUCERS
 //reducer to hold/modify contents of feedback
-const feedback = (state = template, action) => {
-    
+
+let template = {
+    feeling: 0,
+    understanding: 0,
+    support: 0,
+    comments: ''
+};
+
+const feedback = (state = [], action) => {
+    switch (action.type) {
+        case 'ADD_FEELING':
+            return [...state, action.payload]
+        default:
+            return state
+    }
 }
 
+const storeInstance = createStore(
+    combineReducers({
+        feedback
+    }), applyMiddleware(
+        logger
+    )
+);
 
 
 
-ReactDOM.render(<App />, document.getElementById('root'));
+
+ReactDOM.render(
+    <Provider store={storeInstance}>
+        <App />
+    </Provider>,
+    document.getElementById('root'));
 registerServiceWorker();
