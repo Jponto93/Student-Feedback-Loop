@@ -48,7 +48,7 @@ const understanding = (state = template, action) => {
 }
 
 const support = (state = template, action) => {
-    switch(action.type){
+    switch (action.type) {
         case 'ADD_SUPPORT':
             return action.payload
         default:
@@ -60,7 +60,8 @@ const storeInstance = createStore(
     combineReducers({
         // feedback
         feeling,
-        understanding
+        understanding,
+        support
     }), applyMiddleware(
         logger
     )

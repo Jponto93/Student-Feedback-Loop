@@ -39,8 +39,8 @@ TO DO...
         [x] Support? // placeholder 
     [x] next button 
         [ ] input validation
-        [ ] sends support input to reducer 
-        [ ] sends user to '/comments' 
+        [x] sends support input to reducer 
+        [x] sends user to '/comments' 
 
 [x] comments component
     [x] <h2> Any comments you want to leave? 

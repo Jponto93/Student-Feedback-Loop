@@ -28,7 +28,7 @@ function App() {
           <Support />
         </Route>
 
-        <Route exact path="comments">
+        <Route exact path="/comments">
           <Comments />
         </Route>
 
