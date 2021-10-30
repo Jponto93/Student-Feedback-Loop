@@ -1,18 +1,18 @@
 TO DO...
 
 [ ] Reducers (index.js)
-    [ ] feedback // object template
-        [ ] feeling 
-        [ ] understanding 
+    [x] feedback // object template
+        [x] feeling 
+        [x] understanding 
         [ ] support 
         [ ] comments 
     [ ] resultsList // arr of objects
 
-[ ]  Routes 
-    [ ] '/' for home (feeling) 
-    [ ] '/understanding
-    [ ] '/support'
-    [ ] '/comments '
+[x]  Routes 
+    [x] '/' for home (feeling) 
+    [x] '/understanding
+    [x] '/support'
+    [x] '/comments '
     [ ] '/results'
 
 [x] feeling component
@@ -21,8 +21,8 @@ TO DO...
         [ x] feeling? //placeholder
     [x] next button 
         [ ] input validation
-        [ ] sends feeling input to reducer
-        [ ] sends user to '/understanding'
+        [x] sends feeling input to reducer
+        [x] sends user to '/understanding'
 
 [x] understanding component
     [x] <h2> How well are you understanding the content?
@@ -30,8 +30,8 @@ TO DO...
         [x] Understanding? // placeholder 
     [x] next button 
         [ ] input validation
-        [ ] sends understanding input to reducer 
-        [ ] sends user to '/support'
+        [x] sends understanding input to reducer 
+        [x] sends user to '/support'
 
 [x] support component
     [x] <h2> How well are you feeling supported? 
@@ -39,8 +39,8 @@ TO DO...
         [x] Support? // placeholder 
     [x] next button 
         [ ] input validation
-        [ ] sends support input to reducer 
-        [ ] sends user to '/comments' 
+        [x] sends support input to reducer 
+        [x] sends user to '/comments' 
 
 [x] comments component
     [x] <h2> Any comments you want to leave? 
@@ -48,21 +48,20 @@ TO DO...
         [x] Comments // placeholder 
     [x] next button 
         [ ] input validation
-        [ ] sends comments to the reducer 
-        [ ] send complete review to resultsList reducer (for admin)
-        [ ] sends user to '/results' to review
+        [x] sends total feedback results to DB using POST
+        [x] sends user to '/results' to review
 
-[ ] review component
+[x] review component
     <h2> Review Your Feedback 
         <p> obj.feeling
         <p> obj.understanding
         <p> obj.support
         <p> obj.comments
     <button>SUBMIT 
-        [ ] sends complete feedback to server 
-        [ ] saves submission in DB 
+        [x] sends complete feedback to server 
+        [x] saves submission in DB 
     
-[ ] thank you component
-    [ ] <p> Thank You!
-        [ ] <button> Leave New Feedback </button> 
-            [ ] reset survey from beginning 
+[x] thank you component
+    [x] <p> Thank You!
+        [x] <button> Leave New Feedback </button> 
+            [x] reset survey from beginning 
