@@ -29,6 +29,10 @@ function Support() {
         <>
             <h2>How well are you being supported?</h2>
             <div className="container">
+            <Button
+            onClick={() => history.push('/understanding')}
+            variant="contained"
+            color="inherit">BACK</Button>
                 <div className="questionIn">
                     <TextField
                         id="outlined-basic"

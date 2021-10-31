@@ -36,6 +36,10 @@ function Results() {
         <Paper
             elevation={12}>
             <>
+            <Button
+            onClick={() => history.push('/comments')}
+            variant="contained"
+            color="inherit">BACK</Button>
                 <h2>Review Your Feedback</h2>
                 <p>Feelings: {results.feeling}</p>
                 <p>Understanding: {results.understanding}</p>

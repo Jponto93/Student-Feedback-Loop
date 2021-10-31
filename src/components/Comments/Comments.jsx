@@ -35,6 +35,10 @@ function Comments() {
         <>
             <h2>Any comments you want to leave?</h2>
             <div className="container">
+            <Button
+            onClick={() => history.push('/support')}
+            variant="contained"
+            color="inherit">BACK</Button>
                 <div className="questionIn">
                     <TextField
                         id="outlined-basic"
