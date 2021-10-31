@@ -49,7 +49,8 @@ function Admin() {
                             return (
                                 <FeedbackItem
                                     feedback={feedback}
-                                    key={feedback.id} />
+                                    key={feedback.id}
+                                    fetchFeedback={fetchFeedback} />
                             )
                         })}
                     </TableBody>
