@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useHistory } from "react-router";
+import { Button, TextField } from '@mui/material';
 
 function Understanding() {
 
@@ -26,14 +27,22 @@ function Understanding() {
     return (
         <>
             <h2>How well are you understanding the content?</h2>
-            <input
-                required
-                type="number"
-                placeholder="Understanding?"
-                value={understandingFeedback}
-                onChange={(e) => setUnderstandingFeedback(e.target.value)} />
-            <button
-                onClick={handleClick}>NEXT</button>
+            <div className="container">
+                <div className="questionIn">
+                    <TextField
+                        id="outlined-basic"
+                        label="Feeling?"
+                        variant="outlined"
+                        required
+                        type="number"
+                        placeholder="Understanding?"
+                        value={understandingFeedback}
+                        onChange={(e) => setUnderstandingFeedback(e.target.value)} />
+                </div>
+                <Button
+                    variant="contained"
+                    onClick={handleClick}>NEXT</Button>
+            </div>
         </>
     )
 } // end Understanding
