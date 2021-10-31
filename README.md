@@ -27,7 +27,7 @@ This project was a lot of fun to put together! It is a survey to collect feedbac
 
 ## Screenshots
 
-<img src="<img src="https://www.hrdconnect.com/wp-content/uploads/2018/02/feedback1.jpg" />
+<img src="https://www.hrdconnect.com/wp-content/uploads/2018/02/feedback1.jpg" />
 
 ## Built With
 
