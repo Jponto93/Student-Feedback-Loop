@@ -31,7 +31,7 @@ function Understanding() {
                 <div className="questionIn">
                     <TextField
                         id="outlined-basic"
-                        label="Feeling?"
+                        label="Understanding?"
                         variant="outlined"
                         required
                         type="number"
@@ -41,6 +41,7 @@ function Understanding() {
                 </div>
                 <Button
                     variant="contained"
+                    color="inherit"
                     onClick={handleClick}>NEXT</Button>
             </div>
         </>

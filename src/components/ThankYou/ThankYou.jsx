@@ -1,4 +1,5 @@
 import { useHistory } from "react-router";
+import { Button } from '@mui/material';
 
 function ThankYou() {
 
@@ -7,7 +8,10 @@ function ThankYou() {
     return (
         <>
             <h2>Thank You!</h2>
-            <button onClick={() => history.push('/')}>Leave New Feedback</button>
+            <Button
+                variant="contained"
+                color="info"
+                onClick={() => history.push('/')}>Leave New Feedback</Button>
         </>
     )
 } // end ThankYou

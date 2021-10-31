@@ -42,7 +42,9 @@ function Feeling() {
                         value={feelingFeedback}
                         onChange={(e) => setFeelingFeedback(e.target.value)} />
                 </div>
-                <Button variant="contained"
+                <Button
+                    variant="contained"
+                    color="inherit"
                     onClick={handleClick}>NEXT</Button>
             </div>
         </>

@@ -30,9 +30,9 @@ function Support() {
             <h2>How well are you being supported?</h2>
             <div className="container">
                 <div className="questionIn">
-                <TextField
+                    <TextField
                         id="outlined-basic"
-                        label="Feeling?"
+                        label="Support?"
                         variant="outlined"
                         required
                         type="number"
@@ -41,7 +41,8 @@ function Support() {
                         onChange={(e) => setSupportFeedback(e.target.value)} />
                 </div>
                 <Button
-                variant="contained"
+                    variant="contained"
+                    color="inherit"
                     onClick={handleClick}>NEXT</Button>
             </div>
         </>

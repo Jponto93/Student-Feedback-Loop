@@ -2,6 +2,7 @@ import axios from "axios"
 import { useSelector } from "react-redux";
 import { useHistory } from "react-router";
 import { useDispatch } from "react-redux";
+import { Paper, Button } from '@mui/material';
 
 function Results() {
 
@@ -32,14 +33,19 @@ function Results() {
     }
 
     return (
-        <>
-            <h2>Review Your Feedback</h2>
-            <p>Feelings: {results.feeling}</p>
-            <p>Understanding: {results.understanding}</p>
-            <p>Support: {results.support}</p>
-            <p>Comments: {results.comments}</p>
-            <button onClick={handleSubmit}>SUBMIT</button>
-        </>
+        <Paper
+            elevation={12}>
+            <>
+                <h2>Review Your Feedback</h2>
+                <p>Feelings: {results.feeling}</p>
+                <p>Understanding: {results.understanding}</p>
+                <p>Support: {results.support}</p>
+                <p>Comments: {results.comments}</p>
+                <Button
+                    color="inherit"
+                    variant="contained" onClick={handleSubmit}>SUBMIT</Button>
+            </>
+        </Paper>
     )
 } // end Results
 
