@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useHistory } from "react-router";
+import './Support.css';
+import { Button, TextField } from '@mui/material';
 
 function Support() {
 
@@ -26,14 +28,23 @@ function Support() {
     return (
         <>
             <h2>How well are you being supported?</h2>
-            <input
-                required
-                type="number"
-                placeholder="Support?"
-                value={supportFeedback}
-                onChange={(e) => setSupportFeedback(e.target.value)} />
-            <button
-                onClick={handleClick}>NEXT</button>
+            <div className="container">
+                <div className="questionIn">
+                    <TextField
+                        id="outlined-basic"
+                        label="Support?"
+                        variant="outlined"
+                        required
+                        type="number"
+                        placeholder="Support?"
+                        value={supportFeedback}
+                        onChange={(e) => setSupportFeedback(e.target.value)} />
+                </div>
+                <Button
+                    variant="contained"
+                    color="inherit"
+                    onClick={handleClick}>NEXT</Button>
+            </div>
         </>
     )
 } // end Support
