@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.questionIn {
+    display: flex;
+}
+
+.nextBtn {
+    display: flex;
+}
+

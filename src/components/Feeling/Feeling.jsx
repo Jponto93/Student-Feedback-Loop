@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router';
+import './Feeling.css';
+import { Button, TextField } from '@mui/material';
+
 
 function Feeling() {
 
@@ -28,14 +31,20 @@ function Feeling() {
     return (
         <>
             <h2>How are you feeling today?</h2>
-            <input
-                required
-                type="number"
-                placeholder="Feeling?"
-                value={feelingFeedback}
-                onChange={(e) => setFeelingFeedback(e.target.value)} />
-            <button
-                onClick={handleClick}>NEXT</button>
+            <div className="container">
+                <div className="questionIn">
+                    <TextField
+                        id="outlined-basic"
+                        label="Feeling?"
+                        variant="outlined"
+                        required
+                        type="number"
+                        value={feelingFeedback}
+                        onChange={(e) => setFeelingFeedback(e.target.value)} />
+                </div>
+                <Button variant="contained"
+                    onClick={handleClick}>NEXT</Button>
+            </div>
         </>
     )
 } // end Feeling
