@@ -9,6 +9,7 @@ import Header from '../Header/Header';
 import { HashRouter as Router, Route } from 'react-router-dom'
 import Results from '../Results/Results';
 import ThankYou from '../ThankYou/ThankYou';
+import Admin from '../Admin/Admin';
 
 function App() {
 
@@ -33,6 +34,9 @@ function App() {
         </Route>
         <Route exact path="/thankyou">
           <ThankYou />
+        </Route>
+        <Route exact path="/admin">
+          <Admin />
         </Route>
       </div>
     </Router>
