@@ -1,17 +1,17 @@
-const express = require ('express');
+const express = require('express');
 const router = express.Router();
 const pool = require('../modules/pool');
 
 router.get('/', (req, res) => {
 
     pool.query('SELECT * FROM "feedback";')
-    .then((result) => {
-        res.send(result.rows);
-    })
-    .catch((err) => {
-        console.log('Error in GET');
-        res.sendStatus(500);
-    })
+        .then((result) => {
+            res.send(result.rows);
+        })
+        .catch((err) => {
+            console.log('Error in GET');
+            res.sendStatus(500);
+        })
 })
 
 router.post('/', (req, res) => {
